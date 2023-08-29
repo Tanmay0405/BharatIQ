@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="pstyle.css">
+</head>
+<body>
+    
+<div id="header">
+    
+<div class="container">
+    <h1 style="font-size: 30px; color: rgb(219, 52, 52); font-family: ;">Introduction</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>Web developer</p>
+        <h1>Hii I'm <span>Tanmay</span></h1>
+    </div>
+</div>
+</div>
+<!-----------about---------->
+<div id="about">r̥
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pic.jpg" alt="User(Me)">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi there! to introduce myself as a student hailing from the esteemed NIET Greater Noida, pursuing a journey of knowledge within the realm 
+                    of the Computer Science branch. With a passion for technology and a curiosity that knows no bounds, I navigate the ever-evolving landscape of 
+                    computer science with fervor and dedication. Embracing challenges as opportunities and seeking to unravel the intricacies of algorithms, coding, and 
+                    innovation, I stand poised to contribute meaningfully to the world of technology. As an avid learner, I thrive on the fusion of theory and practical 
+                    application, continually expanding my skill set to not only excel academically but also to shape a promising future in the world of computers..</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skill</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>Web developer</span><br>Designing Web Interfeces</li>
+                            <li><span>Python programmer</span><br>developing Software</li>
+                            <li><span>Java programmer</span><br>developing apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Python Basics</span><br>University of Michigan</li>
+                            <li><span>Introduction to AI</span><br>IBM</li>
+                            <li><span>Python for data science,AI &</span><br> IBM</li>
+                            <li><span>Human Centered Design for Inclusive Innovation</span><br>University of Toronto</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B-tech(CSE)</span><br>NIET</span><br>2022-2026</li>
+                            <li><span>Secondary Education(11th-12th)</span><br>Lucknow Public School</span><br></li>
+                            <li><span>Primary Education</span><br>Lucknow Public School</span><br></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paperplane"></i>tanmayawasthi070@gmail.com</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="RESUMETA" download class="btn btn2">Download CV</a>
+            </div>
+        </div class="contact-right">
+       </div>
+       <div class="copyright">
+        <p>Copyright ©Tanmay</p>
+
+       </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+}
+
+
+</script>
+
+    
+</body>
+</html>
